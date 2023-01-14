@@ -1,5 +1,6 @@
 package com.unab;
 
+
 import java.util.Scanner;
 
 public class Repaso {
@@ -32,6 +33,7 @@ public class Repaso {
 
 		tablero();
 		
+		for(int i=1; i <5; i++) {
 		
 		System.out.println(" ");
 		System.out.println("Jugador 1(X), ingrese casilla (fila columnas) Ej a1:");
@@ -70,7 +72,45 @@ public class Repaso {
 		}
 		
 		tablero();
-
+		
+		System.out.println(" ");
+		System.out.println("Jugador 2(O), ingrese casilla (fila columnas) Ej a1:");
+	
+		respuesta = entrada.nextLine();
+		
+		switch (respuesta) {
+			case "a1":
+				a1 = "O";
+				break;
+			case "a2":
+				a2 = "O";
+				break;			
+			case "a3":
+				a3 = "O";
+				break;	
+			case "b1":
+				b1 = "O";
+				break;			
+			case "b2":
+				b2 = "O";
+				break;		
+			case "b3":
+				b3 = "O";
+				break;		
+			case "c1":
+				c1 = "O";
+				break;			
+			case "c2":
+				c2 = "O";
+				break;		
+			case "c3":
+				c3 = "O";
+				break;									
+		
+		}
+		
+		tablero();
+		}
 	}
 
 }
